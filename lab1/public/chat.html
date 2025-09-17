@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="web, programming, web-page, webpage, socket, socket.io, chat">
+        <meta name="description" content="Web-page to show the use of Socket.io">
+        <link rel="stylesheet" href="css/chat.css">
+        <title>Room Chat (Socket.io)</title>
+    </head>
+    <body>
+        <div id="joiner-info">
+            <p id="room-info">Room: <strong><em></em></strong></p>
+
+            <p id="user-info">Username: <strong><em></em></strong></p>
+        </div>
+
+        <div id="chat-cont">
+            <div id="main-cont">
+                <div id="users-list">
+                    <h3>Users in Chatroom:</h3>
+
+                    <ul id="users"></ul>
+                </div>
+
+                <div id="chat">
+                    <div id="messages"></div>
+
+                    <form id="form-msg">
+                        <input id="msg-input" type="text" placeholder="Message..." required>
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/chat.js"></script>
+    </body>
+</html>
