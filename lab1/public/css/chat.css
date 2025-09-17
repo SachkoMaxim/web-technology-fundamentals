@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family:'Comic Sans MS', Arial, Helvetica, serif;
+    background: darkturquoise;
+    color: #1f1f1f;
+}
+
+#joiner-info {
+    background-color: darkorchid;
+    color: chartreuse;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+}
+
+#chat-cont {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main-cont {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+#users-list {
+    width: 25%;
+    background-color: #d164ff;
+    padding: 25px;
+    box-shadow: 7px 0 14px rgba(0, 0, 0, 0.3);
+}
+
+#users-list h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: chartreuse;
+}
+
+#users-list ul {
+    list-style-type: none;
+    padding: 0;
+    color: chartreuse;
+}
+
+#users-list ul li {
+    font-size: 1.1em;
+    padding: 7px;
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 7px;
+}
+
+#chat {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+}
+
+#messages {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    background: linear-gradient(165deg, #fcf8d2 0%, #aef5d9 100%);
+}
+
+#messages div {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+#join {
+    background-color: paleturquoise;
+}
+
+#chat-msg {
+    background-color: lemonchiffon;
+}
+
+#your-chat-msg {
+    background-color: darkseagreen;
+}
+
+#leave {
+    background-color: lightcoral;
+}
+
+#messages div p {
+    margin: 0;
+    padding: 3px 0;
+}
+
+#messages div strong {
+    color: #79eb0f;
+}
+
+#form-msg {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    background-color: #6e278c;
+}
+
+#msg-input {
+    flex: 7;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.1em;
+    outline: none;
+    font-family:'Comic Sans MS', Arial, Helvetica, serif;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+#form-msg button {
+    flex: 1;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    background-color: #770263;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family:'Comic Sans MS', Arial, Helvetica, serif;
+    transition: background-color 0.4s ease;
+}
+#form-msg button:hover {
+    background-color: #a20287;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
