@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Contract</title>
+</head>
+<body>
+    <h1>Delete Contract</h1>
+
+    <p>Are you sure you want to delete this contract for <%= contract.companyName %>?</p>
+
+    <form action="/contracts/<%= contract._id %>/delete" method="POST">
+        <button type="submit">Yes, Delete</button>
+    </form>
+
+    <a href="/contracts">No, go Back</a>
+</body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #79af96;
+        color: #333;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #f95651;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    button {
+        background-color: #f95651;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #ae100a;
+    }
+
+    a {
+        color: #04ff00;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+</html>
