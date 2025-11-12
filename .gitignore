@@ -146,3 +146,5 @@ vite.config.ts.timestamp-*
 *.ntvs*
 *.njsproj
 *.sln
+
+__pycache__/
